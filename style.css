@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "AvantGarde";
+  src: url("fonts/ITC Avant Garde Gothic CE Book.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("fonts/ITC Avant Garde Gothic CE Demi.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("fonts/ITC Avant Garde Gothic Bold.otf");
+  font-weight: 800;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.splash-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}
+
+#main-content {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  background: url("sgheroimg.jpg") center center fixed;
+  background-size: cover;
+}
+
+/* Fixed Navbar */
+.main-nav {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px 40px;
+  border-radius: 999px;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+    font-family: "AvantGarde", sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ABOUT SECTION LAYOUT */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    height: auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.about-heading {
+    font-size: 110px; /* bigger */
+    font-weight: 800; /* bold AF */
+    margin: 0;
+    line-height: 0.9;
+    letter-spacing: 2px; /* clean spacing */
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 200;
+    color: #680b12; /* your red shade */
+    margin-left: 6px; /* adds that space between ABOUT and me */
+}
+
+.about-para {
+    font-size: 26px; /* bigger */
+    width: 70 percent;
+    margin-top: 18px;
+}
+
+.about-left {
+    width: 55%;
+}
+
+.about-right {
+    width: 40vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.about-img {
+    width: 70%; /* smaller now */
+    align-items: center;
+    height: auto;
+    object-fit: cover;
+    max-height: 65vh; /* prevents tall overflow */
+    border: 12px solid #680b12; /* clean red border */
+    border-radius: 6px; /* optional, remove if you want sharp edges */
+}
+
+/* STRIPS */
+.about-strips {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px; /* pulls them up to touch the image bottom */
+}
+
+.strip {
+    width: 100 percent;
+    height: 10px;
+}
+
+.strip1 {
+  background: #5d070f;
+}
+
+.strip2 {
+  background: #680b12;
+}
+
+.strip3 {
+  background: #7f131e;
+}
+
+.strip4 {
+  background: #680b12;
+}
+
+.strip5 {
+  background: #5d070f;
+}
+
+.mid-section {
+  width: 100%;
+  display: block;
+  overflow: hidden; /* prevents any accidental overflow */
+}
+
+.mid-section img.fullwidth-img {
+  width: 100%;       /* full width of screen */
+  height: auto;      /* maintains aspect ratio so it doesn't distort */
+  display: block;    /* removes any small gap below the image */
+  object-fit: cover; /* optional: ensures it fills width nicely */
+}
+
+.button-container {
+    text-align: center; /* centers the button horizontally */
+    margin: 40px 0;     /* spacing above and below */
+    margin-top: 5px;
+}
+
+.custom-btn {
+    display: inline-block;
+    width: 25%;                 /* smaller than before */
+    min-width: 120px;           /* ensures it’s not too tiny on mobile */
+    padding: 10px 0;            /* thin height but enough for text */
+    background-color: #8B0000;  /* dark red */
+    color: white;               /* text color */
+    font-size: 28px;            /* bigger text */
+    font-weight: 600;           /* makes text bold enough */
+    border-radius: 50px;        /* fully rounded sides */
+    text-align: center;
+    text-decoration: none;      /* remove underline */
+    transition: background 0.3s ease; /* smooth hover effect */
+}
+
+.custom-btn:hover {
+    background-color: #a00000;  /* slightly lighter on hover */
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 60px; /* space from button above */
+    margin-bottom: 60px;
+    padding: 40px 20px;
+}
+
+
+.contact-subheading {
+    color: #680b12; /* red */
+    font-style: italic;
+    font-size: 30px; 
+    margin: 0;        /* remove default margin */
+    line-height: 0.1;   /* shrink spacing inside the text line */
+}
+
+.contact-heading {
+    font-size: 150px;  /* big heading */
+    margin: 1px 0 30px 0; /* tiny gap above (5px) and 30px below for buttons */
+    line-height: 1.1; /* keep heading tight */
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;       /* more space between buttons */
+    flex-wrap: wrap; /* wrap if screen is small */
+    margin-top: 20px;
+}
+
+.contact-buttons .btn {
+    background-color: #d3d3d3; /* light gray */
+    color: #000;               /* text color */
+    padding: 20px 40px !important;
+    font-size: 22px !important;
+    min-width: 150px !important;
+    border-radius: 50px !important;
+    text-decoration: none;
+    font-weight: 700;           /* bold text */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+    background-color: #c0c0c0;  /* darker on hover */
+    transform: translateY(-3px); /* subtle lift */
+}
+
+
+
+
+

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- your existing CSS file -->
+    <style>
+        /* Thin top bar */
+        .project-top-bar {
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 20px;
+            font-size: 14px;
+            font-weight: 500;
+            box-sizing: border-box;
+        }
+        .project-top-bar .left-text,
+        .project-top-bar .right-text {
+            color: #000;
+        }
+
+
+        /* Images under top bar */
+        .project-images img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Remove margin between top bar and first image */
+        .project-images {
+            margin-top: 0;
+        }
+
+        /* Optional: add small padding at bottom of images */
+.project-images {
+    position: relative; /* THIS is the key */
+}
+
+.button-container {
+    position: absolute;
+    bottom: 50px;       /* distance from bottom of images */
+    left: 50%;           /* center horizontally */
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.custom-btn {
+    display: inline-block;
+    width: 40%;
+    min-width: 240px;
+    padding: 15px 0;
+    background-color: #8B0000;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.custom-btn:hover {
+    background-color: #a30000;
+    transform: translateY(-2px);
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Navbar (unchanged) -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="portfolio ea.html#about">ABOUT</a></li>
+            <li><a href="portfolio ea.html#project">PROJECTS</a></li>
+            <li><a href="portfolio ea.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Thin white top bar -->
+    <div class="project-top-bar">
+        <span class="left-text">Project 2</span>
+        <span class="right-text">Harvest Rebrand</span>
+    </div>
+
+    <!-- Project Images -->
+    <div class="project-images">
+        <img src="img/hh img.png" alt="Project Image 1">
+        <img src="img/hh img 2.png" alt="Project Image 2">
+        <div class="button-container">
+            <a href="portfolio ea.html" class="btn custom-btn">BACK TO HOME</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Satvik Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     <!-- Landing splash page -->
+        <div id="splash">
+            <img src="img/splashlogo.png" class="img-fluid splash-img">
+        </div>
+
+        <script>
+    // Click anywhere to fade out
+            document.getElementById("splash").addEventListener("click", function() 
+            {this.classList.add("fade-out")})
+        </script>
+
+    <!-- Hero Section -->
+        <section class="hero">
+            <img src="img/sgheroimg.png" class="hero-img">
+        </section>
+
+     <!-- Fixed Nav -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="project1.html#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+    <section id="about" class="about-section">
+        <div class="about-left">
+            <h2 class="about-heading">
+                <span class="bold">ABOUT</span><span class="italic">me</span>
+            </h2>
+            <p class="about-para">
+                Hi, I’m Satvik, a nineteen year old second year design student and an aspiring creative director who is too passionate about everything. Art and Design is a medium to express myself, my thoughts, beliefs, and ideas which are undeniably seen in all my works. I have a lot more to learn and this for me is just a solid start.
+            </p>
+        </div>
+        <div class="about-right">
+            <img src="img/me.jpeg" class="about-img">
+        </div>
+    </section>
+
+        <div class="about-strips">
+            <div class="strip strip1"></div>
+            <div class="strip strip2"></div>
+            <div class="strip strip3"></div>
+            <div class="strip strip4"></div>
+            <div class="strip strip5"></div>
+        </div>
+    </section>
+
+    <section class="mid-section">
+        <img src="img/midsecimg.png" alt="Education section" class="fullwidth-img">
+    </section>
+    <div class="button-container">
+        <a href="project1.html" class="btn custom-btn">PROJECTS</a>
+    </div>    
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <p class="contact-subheading">Thanks for watching and don't forget to</p>
+            <h2 class="contact-heading">CONTACT ME</h2>
+            <div class="contact-buttons">
+                    <a href="https://www.linkedin.com/in/satvik-gautam-bba303269/" target="_blank" class="btn btn-secondary btn-lg">LinkedIn</a>
+                    <a href="https://www.behance.net/satvikgautam" target="_blank" class="btn btn-secondary btn-lg">Behance</a>
+                    <a href="https://www.instagram.com/stvkgtm/" target="_blank" class="btn btn-secondary btn-lg">Instagram</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
